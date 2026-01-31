@@ -1,0 +1,21 @@
+# Build artifacts
+/build/
+/cmake-build-debug/
+
+# Visual Studio / MSVC
+*.sln
+*.vcxproj*
+*.user
+*.vcxproj.filters
+*.pdb
+
+# Executables and object files
+*.exe
+*.obj
+*.o
+
+# CLion / JetBrains
+.idea/
+
+# Misc
+*.log
