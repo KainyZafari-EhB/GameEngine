@@ -9,7 +9,7 @@ int main() {
     }
 
     SDL_Window* window = SDL_CreateWindow("Mijn Eerste Engine", 800, 600, SDL_WINDOW_RESIZABLE);
-    SDL_Renderer* renderer = SDL_CreateRenderer(window, NULL);
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, nullptr);
     if (!renderer) {
         std::cerr << "Renderer could not initialize! SDL_Error: " << SDL_GetError() << std::endl;
     }

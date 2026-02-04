@@ -13,7 +13,14 @@ set(SDL_STATIC OFF CACHE BOOL "" FORCE)
 add_subdirectory(external/SDL3)
 
 # 3. Je eigen executable maken
-add_executable(game_engine_app src/main.cpp)
+add_executable(game_engine_app src/main.cpp
+        src/Window.cpp
+        src/Window.h
+        src/Engine.cpp
+        src/Engine.h
+        src/test.cpp
+        src/test.h
+)
 
 # 4. Linken met de SDL3 TARGET
 # Je hoeft nu geen paden meer op te geven!
