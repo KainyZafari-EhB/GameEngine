@@ -18,8 +18,6 @@ add_executable(game_engine_app src/main.cpp
         src/Window.h
         src/Engine.cpp
         src/Engine.h
-        src/test.cpp
-        src/test.h
 )
 
 # 4. Linken met de SDL3 TARGET
