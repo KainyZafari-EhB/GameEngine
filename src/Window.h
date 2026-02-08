@@ -15,16 +15,17 @@ class Window {
 public:
     SDL_Window *window;
     SDL_Renderer *renderer;
-    int width, height;
+    int width = 800;
+    int height = 600;
 
     //initialiseer
-    void init(const std::string& name);
+    void init();
 
     //destroy renderer en window
-    void cleanup();
+    void cleanup() const;
 
     //schildert het scherm met een kleur
-    void paint();
+    void paint(const std::string& color);
 
     //toont wat er op het scherm aanwezig is
     void present();

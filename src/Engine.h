@@ -4,12 +4,24 @@
 
 #ifndef GAMEENGINE_ENGINE_H
 #define GAMEENGINE_ENGINE_H
+#include <bits/basic_string.h>
+
+#include "SDL3/SDL_events.h"
 
 //Engine bezit een window
 class Engine {
+public:
     //vraagt input aan window (via poll?)
+    void run();
+
     //update de bewegingen
+    void update();
+
     //chaining van window commands bv paint en daarna pas present
+    void draw(std::string color);
+private:
+    bool isRunning = true;
+    SDL_Event event;
 };
 
 
