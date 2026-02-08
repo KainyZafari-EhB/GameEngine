@@ -17,6 +17,9 @@ public:
     //update de bewegingen
     void update();
 
+    //sluit de engine af
+    void shutdown();
+
     //chaining van window commands bv paint en daarna pas present
     void draw(std::string color);
 private:

@@ -24,6 +24,10 @@ void Engine::update() {
 
 }
 
+void Engine::shutdown() {
+    window.cleanup();
+}
+
 void Engine::draw(std::string color) {
     if (!window.window || !window.renderer) {
         window.init();
